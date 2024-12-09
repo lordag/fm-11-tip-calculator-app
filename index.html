@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./styles/css/styles.css">
+
+  <script src="./scripts/main.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" />
+  </header>
+  <main>
+    <section class="container">
+      <form class="container__form">
+        <span class="container__form__item">
+          <label class="container__form__item__label bill_label" for="bill">
+              <span>Bill</span>
+              <span class="error">Can't be zero</span>
+          </label>
+          <input class="container__form__item__input bill" type="number" id="bill" step="0.01" name="bill" placeholder="0" />
+        </span>
+        <fieldset>
+            <legend>Select Tip %</legend>
+            <div class="container__form__item__tip">
+              
+                <label class="container__form__item__tip__label tip_label" for="tip-5">5%</label>
+                <input class="container__form__item__tip__input" type="radio" id="tip-5" name="tip" value="5" />
+              
+              
+                <label class="container__form__item__tip__label tip_label" for="tip-10">10%</label>
+                <input class="container__form__item__tip__input" type="radio" id="tip-10" name="tip" value="10" />
+              
+              
+                <label class="container__form__item__tip__label tip_label" for="tip-15">15%</label>
+                <input class="container__form__item__tip__input" type="radio" id="tip-15" name="tip" value="15" />
+              
+              
+                <label class="container__form__item__tip__label tip_label" for="tip-25">25%</label>
+                <input class="container__form__item__tip__input" type="radio" id="tip-25" name="tip" value="25" />
+              
+              
+                <label class="container__form__item__tip__label tip_label" for="tip-50">50%</label>
+                <input class="container__form__item__tip__input" type="radio" id="tip-50" name="tip" value="50" />
+              
+              
+                <!-- <label class="container__form__item__tip__label" for="tip-custom">Custom</label> -->
+                <input class="container__form__item__tip__input__custom tip custom_tip" type="number" id="tip-custom" name="tip" placeholder="Custom" />
+              
+            </div>
+        </fieldset>
+        <span class="container__form__item">
+          <label class="container__form__item__label number_of_people_label" for="number_of_people">
+            <span>Number of People</span>
+            <span class="error">Can't be zero</span>
+          </label>
+          <input class="container__form__item__input number_of_people" type="number" id="number_of_people" name="number_of_people" placeholder="0" />
+        </span>
+      </form>
+    </section>
+    <section class="results">
+      <div class="results__row">
+        <p class="results__row__text">  
+          Tip Amount
+          <span>/ person</span>
+        </p>
+        <span class="results__row__value tip_amount">$0.00</span>
+      </div>
+      <div class="results__row">
+        <p class="results__row__text">  
+          Total          
+          <span>/ person</span>
+        </p>
+        <span class="results__row__value total_amount">$0.00</span>
+      </div>
+      <button disabled onclick="reset()">RESET</button>
+    </section>    
+  </main>
+
+</body>
+</html>
