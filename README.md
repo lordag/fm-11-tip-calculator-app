@@ -53,4 +53,4 @@ I used javascript Proxy in order to validate input field values
 - [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/lordag)
+- Frontend Mentor - [@lordag](https://www.frontendmentor.io/profile/lordag)
